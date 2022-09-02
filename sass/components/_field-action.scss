@@ -1,0 +1,18 @@
+.section--field-action {
+    padding-top: 0;
+    background-color: var(--primary-background-color);
+  }
+  .field-action__list {
+    display: flex;
+    column-gap: 30px;
+  }
+  .field-action__item {
+    position: relative;
+    width: calc((100% - 60px) / 3);
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+ 
+ 
+ 

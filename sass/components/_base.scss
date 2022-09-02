@@ -1,0 +1,43 @@
+body {
+  background-color: var(--primary-background-color);
+  font-family: roboto, sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+img{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+/* Маркировка списков */
+.nav,
+.contact,
+.features__list,
+.field-action__list,
+.team__list,
+.footer-contact-list,
+.fillters,
+.product-set,
+.social,
+.customers__list,
+.footer-social__list
+ {
+  list-style-type: none;
+}

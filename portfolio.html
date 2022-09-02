@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="conteiner conteiner--header">
+        <a class="logo" href="./"><span class="logo--color">Web</span>Studio</a>
+        <nav class="nav-box">
+          <ul class="nav-box__list">
+            <li class="nav-box__item"><a class="nav-box__link " href="./index.html">Студия</a></li>
+            <li class="nav-box__item"><a class="nav-box__link nav-box__link--current" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav-box__item"><a class="nav-box__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="nav-box__contact">
+          <li class="nav-box__contact-item">
+            <a class="nav-box__contact-link" href="mailto:info@devstudio.com"><svg class="nav-box__contact-icon"  width="16px" height="12px" >
+              <use href="./image/icons.svg#icon-envelope"></use>
+            </svg><span>info@devstudio.com</span></a>
+          </li>
+          <li class="nav-box__contact-item">
+            <a class="nav-box__contact-link" href="tel:+380961111111"><svg class="nav-box__contact-icon"  width="10px" height="16px" >
+              <use href="./image/icons.svg#icon-smartphone" ></use>
+            </svg><span>+38 096 111 11 11</span></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="examples section">
+        <div class="conteiner">
+          <h1 class="visually-hidden">Наши работы</h1>
+          <ul class="fillters">
+            <li><button type="button" class="fillters__btn fillters__btn--current">Все</button></li>
+            <li><button type="button" class="fillters__btn">Веб-сайты</button></li>
+            <li><button type="button" class="fillters__btn">Приложения</button></li>
+            <li><button type="button" class="fillters__btn">Дизайн</button></li>
+            <li><button type="button" class="fillters__btn">Маркетинг</button></li>
+          </ul>
+          <ul class="product-set">
+            <li class="product">
+              <a class="product__link" href="#"> 
+                <div class="product__overlay-box">
+                <img src="./image/website-1.jpg" alt="Пример Веб-сайта"  width="370" class="example-image"/>
+                <div class="product__overlay">
+                  <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div>
+                <div class="product__meta">
+                  <h2 class="product__title">Технокряк</h2>
+                  <p class="product__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="product">
+              <a class="product__link" href="#"> 
+                <div class="product__overlay-box">
+                <img src="./image/desing-1.jpg" alt="Пример дизайна" width="370" class="example-image"/>
+                <div class="product__overlay">
+                  <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div> 
+                <div class="product__meta">
+                  <h2 class="product__title">
+                    Постер <span lang="en">New Orlean vs Golden Star</span>
+                  </h2>
+                  <p class="product__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="product">
+              <a class="product__link" href="#"><div class="product__overlay-box">
+                <img src="./image/app-1.jpg" alt="Пример Приложения" width="370" class="example-image"/>
+                  <div class="product__overlay">
+                    <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                  </div>
+                </div> 
+                <div class="product__meta">
+                  <h2 class="product__title">Ресторан <span lang="en">Seafood</span></h2>
+                  <p class="product__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="product">
+              <a class="product__link" href="#">
+                <div class="product__overlay-box">
+                <img src="./image/marketing-1.jpg" alt="Пример Маркетинга" width="370" class="example-image"/>
+                  <div class="product__overlay">
+                  <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div> 
+                <div class="product__meta">
+                  <h2 class="product__title">Проект <span lang="en">Prime</span></h2>
+                  <p class="product__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="product">
+              <a class="product__link" href="#">
+                <div class="product__overlay-box">
+                <img src="./image/app-2.jpg" alt="Пример Приложения" width="370" class="example-image"/>
+                  <div class="product__overlay">
+                  <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div> 
+                <div class="product__meta">
+                  <h2 class="product__title">Проект <span lang="en">Boxes</span></h2>
+                  <p class="product__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="product">
+              <a class="product__link" href="#">
+                <div class="product__overlay-box">
+                <img src="./image/website-1.jpg" alt="Пример Веб-сайта" width="370" class="example-image"/>
+                <div class="product__overlay">
+                  <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div> 
+                <div class="product__meta">
+                  <h2 class="product__title" lang="en">Inspiration has no Borders</h2>
+                  <p class="product__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="product">
+              <a class="product__link" href="#">
+                <div class="product__overlay-box">
+                <img src="./image/desing-2.jpg" alt="Пример дизайна" width="370" class="example-image"/>
+                <div class="product__overlay">
+                  <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div> 
+                <div class="product__meta">
+                  <h2 class="product__title">Издание <span lang="en">Limited Edition</span></h2>
+                  <p class="product__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="product">
+              <a class="product__link" href="#">
+                <div class="product__overlay-box">
+                <img src="./image/marketing-2.jpg" alt="Пример Маркетинга" width="370" class="example-image"/>
+                  <div class="product__overlay">
+                  <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div> 
+                <div class="product__meta">
+                  <h2 class="product__title">Проект <span lang="en">LAB</span></h2>
+                  <p class="product__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="product">
+              <a class="product__link" href="#">
+                <div class="product__overlay-box">
+                <img src="./image/app-3.jpg" alt="Пример Приложения" width="370" class="example-image"/>
+                  <div class="product__overlay">
+                  <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
+                </div>
+              </div> 
+                <div class="product__meta">
+                  <h2 class="product__title" lang="en">Growing Business</h2>
+                  <p class="product__text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+     <footer class="section section--footer">
+      <div class="conteiner footer-conteiner">
+        <div class="footer">
+          <a href="./" class="logo logo--footer"><span class="logo--color">Web</span>Studio</a>
+        <address class="address">
+          <p class="address__text">м. Київ, пр-т Лесі Українки, 26</p>
+          <ul class="footer-contact">
+            <li class="footer-contact__item">
+              <a class="footer-contact__link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="footer-contact__item">
+              <a class="footer-contact__link" href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
+        </div>
+        <div class="footer-social">
+          <p class="footer-social__text">Приєднуйтесь</p>
+          <ul class="footer-social__list">
+            <li class="footer-social__item"><a href="#" class="footer-social__link"> 
+              <svg class="footer-social__icon" width="20px" height="20px">
+              <use href="./image/icons.svg#icon-instagram">
+             </use></svg>
+          </a></li>
+            <li class="footer-social__item"><a href="#" class="footer-social__link"><svg class="footer-social__icon" width="20px" height="20px">
+              <use href="./image/icons.svg#icon-twitter"></use>
+            </svg></a></li>
+            <li class="footer-social__item"><a href="#" class="footer-social__link"><svg class="footer-social__icon" width="20px" height="20px">
+              <use href="./image/icons.svg#icon-facebook"></use>
+            </svg></a></li>
+            <li class="footer-social__item"><a href="#" class="footer-social__link"><svg class="footer-social__icon" width="20px" height="20px">
+              <use href="./image/icons.svg#icon-linkedin"></use>
+            </svg></a></li>
+          </ul>
+        </div>
+        <div class="footer-form">
+        <b class="footer-form__text">Підпишіться на розсилку</b>
+        <form class="footer-form__box">
+          <input type="text"  class="footer-form__input" name="email" placeholder="E-mail" >
+          <button class="button footer-btn"> 
+           Підписатися
+           <svg class="footer-btn__icon" width="24px" height="24px">
+            <use href="./image/icons.svg#icon-1"></use>
+           </svg>
+
+          </button>
+        </form>
+        </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+
+
+
+
+
