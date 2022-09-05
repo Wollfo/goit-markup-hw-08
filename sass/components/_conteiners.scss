@@ -1,14 +1,28 @@
-
 .section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
     padding-top: 94px;
     padding-bottom: 94px;
   }
-  .conteiner {
-    box-sizing: border-box;
-    width: 1200px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
+}
+.conteiner {
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100%;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  @include mobile {
+    width: 480px;
   }
-  .examples {
-    background-color: var(--primary-background-color);}
+  @include tablet {
+    width: 768px;
+  }
+  @include desktop {
+    width: 1200px;
+  }
+}
+.examples {
+  background-color: var(--primary-background-color);
+}

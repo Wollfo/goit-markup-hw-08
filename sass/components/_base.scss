@@ -23,7 +23,7 @@ a {
 }
 img{
   display: block;
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 /* Маркировка списков */
@@ -37,7 +37,10 @@ img{
 .product-set,
 .social,
 .customers__list,
-.footer-social__list
+.footer-social__list,
+.menu__contact-list,
+.menu__social-list,
+.navigation__list
  {
   list-style-type: none;
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WebStudio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
+      <header class="header">
       <div class="conteiner conteiner--header">
         <a class="logo" href="./"><span class="logo--color">Web</span>Studio</a>
         <nav class="nav-box">
@@ -38,6 +38,49 @@
             </svg><span>+38 096 111 11 11</span></a>
           </li>
         </ul>
+         <div class="menu">
+        <button type="button" class="menu__btn--open " data-menu-open>
+          <svg class="menu__icon--open" width="40px" height="40px">
+            <use href="./image/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+        <div class="menu__conteiner is-hidden" data-menu>
+<button type="button"class="menu__btn--close " data-menu-close>
+   <svg class="menu__icon--close" width="24px" height="px">
+            <use href="./image/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg></button>
+          <div class="menu__block-links">
+            <div class="menu__navigation">
+               <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link nav-box__link--current" href="#">Студия</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="./portfolio.html">Портфолио</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+          </ul>
+            </div>
+<div class="menu__contact-thumb">     
+        <div class="menu__contact">
+            <ul class="menu__contact-list">
+              <li class="menu__contact-item">
+            <a class="menu__contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="menu__contact-item">
+            <a class="menu__contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+           </div>
+           <div class="menu__social">
+<ul class="menu__social-list">
+  <li class="menu__social-link" href="#" >Instagram</li>
+  <li class="menu__social-link" href="#" >Twitter</li>
+  <li class="menu__social-link" href="#" >Facebook</li>
+  <li class="menu__social-link" href="#" >LinkedIn</li>
+</ul>
+           </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
       </div>
     </header>
     <main>
@@ -55,7 +98,12 @@
             <li class="product">
               <a class="product__link" href="#"> 
                 <div class="product__overlay-box">
-                <img src="./image/website-1.jpg" alt="Пример Веб-сайта"  width="370" class="example-image"/>
+                   <picture class="example-image">
+                                    <source srcset="./image/product-1.webp 1x, ./image/product-1@2x.webp 2x"
+                                        type="image/webp" />
+                                    <img srcset="./image/product-1-min.jpg 1x, ./image/product-1@2x-min.jpg 2x"
+                                        src="./image/product-1-min.jpg" alt="Пример Веб-сайта" width="370">
+                                </picture>
                 <div class="product__overlay">
                   <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -69,7 +117,12 @@
             <li class="product">
               <a class="product__link" href="#"> 
                 <div class="product__overlay-box">
-                <img src="./image/desing-1.jpg" alt="Пример дизайна" width="370" class="example-image"/>
+                <picture class="example-image">
+                                    <source srcset="./image/product-2.webp 1x, ./image/product-2@2x.webp 2x"
+                                        type="image/webp" />
+                                    <img srcset="./image/product-2-min.jpg 1x, ./image/product-2@2x-min.jpg 2x"
+                                        src="./image/product-2-min.jpg" alt="Пример дизайна" width="370">
+                                </picture>
                 <div class="product__overlay">
                   <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -84,7 +137,12 @@
             </li>
             <li class="product">
               <a class="product__link" href="#"><div class="product__overlay-box">
-                <img src="./image/app-1.jpg" alt="Пример Приложения" width="370" class="example-image"/>
+                <picture class="example-image">
+                                    <source srcset="./image/product-3.webp 1x, ./image/product-3@2x.webp 2x"
+                                        type="image/webp" />
+                                    <img srcset="./image/product-3-min.jpg 1x, ./image/product-3@2x-min.jpg 2x"
+                                        src="./image/product-3-min.jpg" alt="Пример приложения" width="370">
+                                </picture>
                   <div class="product__overlay">
                     <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                   </div>
@@ -98,7 +156,12 @@
             <li class="product">
               <a class="product__link" href="#">
                 <div class="product__overlay-box">
-                <img src="./image/marketing-1.jpg" alt="Пример Маркетинга" width="370" class="example-image"/>
+               <picture class="example-image">
+                                    <source srcset="./image/product-4.webp 1x, ./image/product-4@2x.webp 2x"
+                                        type="image/webp" />
+                                    <img srcset="./image/product-4-min.jpg 1x, ./image/product-4@2x-min.jpg 2x"
+                                        src="./image/product-4-min.jpg" alt="Пример Маркетинга" width="370">
+                                </picture>
                   <div class="product__overlay">
                   <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -112,7 +175,12 @@
             <li class="product">
               <a class="product__link" href="#">
                 <div class="product__overlay-box">
-                <img src="./image/app-2.jpg" alt="Пример Приложения" width="370" class="example-image"/>
+                <picture class="example-image">
+                                    <source srcset="./image/product-5.webp 1x, ./image/product-5@2x.webp 2x"
+                                        type="image/webp" />
+                                    <img srcset="./image/product-5-min.jpg 1x, ./image/product-5@2x-min.jpg 2x"
+                                        src="./image/product-5-min.jpg" alt="Пример приложения" width="370">
+                                </picture>
                   <div class="product__overlay">
                   <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -126,7 +194,12 @@
             <li class="product">
               <a class="product__link" href="#">
                 <div class="product__overlay-box">
-                <img src="./image/website-1.jpg" alt="Пример Веб-сайта" width="370" class="example-image"/>
+                <picture class="example-image">
+                                    <source srcset="./image/product-6.webp 1x, ./image/product-6@2x.webp 2x"
+                                        type="image/webp" />
+                                    <img srcset="./image/product-6-min.jpg 1x, ./image/product-6@2x-min.jpg 2x"
+                                        src="./image/product-6-min.jpg" alt="Пример Веб-сайта" width="370">
+                                </picture>
                 <div class="product__overlay">
                   <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -140,7 +213,12 @@
             <li class="product">
               <a class="product__link" href="#">
                 <div class="product__overlay-box">
-                <img src="./image/desing-2.jpg" alt="Пример дизайна" width="370" class="example-image"/>
+                <picture class="example-image">
+                                    <source srcset="./image/product-7.webp 1x, ./image/product-7@2x.webp 2x"
+                                        type="image/webp" />
+                                    <img srcset="./image/product-7-min.jpg 1x, ./image/product-7@2x-min.jpg 2x"
+                                        src="./image/product-7-min.jpg" alt="Пример дизайна" width="370">
+                                </picture>
                 <div class="product__overlay">
                   <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -154,7 +232,12 @@
             <li class="product">
               <a class="product__link" href="#">
                 <div class="product__overlay-box">
-                <img src="./image/marketing-2.jpg" alt="Пример Маркетинга" width="370" class="example-image"/>
+                <picture class="example-image">
+                                    <source srcset="./image/product-8.webp 1x, ./image/product-8@2x.webp 2x"
+                                        type="image/webp" />
+                                    <img srcset="./image/product-8-min.jpg 1x, ./image/product-8@2x-min.jpg 2x"
+                                        src="./image/product-8-min.jpg" alt="Пример Маркетинга" width="370">
+                                </picture>
                   <div class="product__overlay">
                   <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -168,7 +251,12 @@
             <li class="product">
               <a class="product__link" href="#">
                 <div class="product__overlay-box">
-                <img src="./image/app-3.jpg" alt="Пример Приложения" width="370" class="example-image"/>
+                <picture class="example-image">
+                                    <source srcset="./image/product-9.webp 1x, ./image/product-9@2x.webp 2x"
+                                        type="image/webp" />
+                                    <img srcset="./image/product-9-min.jpg 1x, ./image/product-9@2x-min.jpg 2x"
+                                        src="./image/product-9-min.jpg" alt="Пример приложения" width="370">
+                                </picture>
                   <div class="product__overlay">
                   <p class="product__overlay-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                 </div>
@@ -234,6 +322,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
 

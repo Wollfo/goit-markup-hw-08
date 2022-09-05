@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WebStudio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
@@ -38,6 +38,49 @@
             </svg><span>+38 096 111 11 11</span></a>
           </li>
         </ul>
+         <div class="menu">
+        <button type="button" class="menu__btn--open " data-menu-open>
+          <svg class="menu__icon--open" width="40px" height="40px">
+            <use href="./image/icons.svg#icon-menu_40px"></use>
+          </svg>
+        </button>
+        <div class="menu__conteiner is-hidden" data-menu>
+<button type="button"class="menu__btn--close " data-menu-close>
+   <svg class="menu__icon--close" width="24px" height="px">
+            <use href="./image/icons.svg#icon-close-black-18dp-2-1"></use>
+          </svg></button>
+          <div class="menu__block-links">
+            <div class="menu__navigation">
+               <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link nav-box__link--current" href="#">Студия</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="./portfolio.html">Портфолио</a></li>
+            <li class="navigation__item"><a class="navigation__link" href="#">Контакты</a></li>
+          </ul>
+            </div>
+<div class="menu__contact-thumb">     
+        <div class="menu__contact">
+            <ul class="menu__contact-list">
+              <li class="menu__contact-item">
+            <a class="menu__contact-link" href="tel:+380961111111">+38 096 111 11 11</a>
+          </li>
+          <li class="menu__contact-item">
+            <a class="menu__contact-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+           </div>
+           <div class="menu__social">
+<ul class="menu__social-list">
+  <li class="menu__social-link" href="#" >Instagram</li>
+  <li class="menu__social-link" href="#" >Twitter</li>
+  <li class="menu__social-link" href="#" >Facebook</li>
+  <li class="menu__social-link" href="#" >LinkedIn</li>
+</ul>
+           </div>
+          </div>
+          </div>
+
+        </div>
+      </div>
       </div>
     </header>
     <main>
@@ -106,14 +149,21 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="field-action__list">
             <li class="field-action__item">
-              <img src="./image/what-we-doing1.jpg" alt="Веб-разработка" width="370" />
+              <img 
+              srcset="./image/field-1-min.jpg 1x, 
+              ./image/field-1@2x-min.jpg 2x"
+                src="./image/field-1-min.jpg"
+                 alt="Веб-разработка" 
+                 width="370" />
               <div class="field-action__add-title-box">
                 <h3 class="field-action__second-title">Десктопні додатки</h3>
               </div>
             </li>
             <li class="field-action__item">
               <img
-                src="./image/what-we-doing2.jpg"
+                srcset="./image/field-2-min.jpg 1x, 
+              ./image/field-2@2x-min.jpg 2x"
+                src="./image/field-2-min.jpg"
                 alt="Разработка под мобильные платформы"
                 width="370"/>
                 <div class="field-action__add-title-box">
@@ -121,7 +171,12 @@
                 </div>
             </li>
             <li class="field-action__item">
-              <img src="./image/what-we-doing3.jpg" alt="Разработка дизайна" width="370" />
+              <img
+              srcset="./image/field-3-min.jpg 1x, 
+              ./image/field-3@2x-min.jpg 2x"
+                src="./image/field-3-min.jpg"
+               alt="Разработка дизайна"
+                width="370" />
               <div class="field-action__add-title-box">
                 <h3 class="field-action__second-title">Дизайнерські рішення</h3>
               </div>
@@ -134,10 +189,11 @@
         <div class="conteiner">
           <h2 class="title">Наша команда</h2>
           <ul class="team__list">
-            <li>
+            <li class="team__item">
               <img
                 class="team__image"
-                src="./image/team1.jpg"
+                srcset="./image/team-1-desk-min.jpg 1x, ./image/team-1-desk@2x-min.jpg 2x"
+                src="./image/team-1-desk-min.jpg"
                 alt="Продакт Дизайнер студии"
                 width="270"
               />
@@ -168,10 +224,11 @@
                 </ul>
               </div>
             </li>
-            <li>
+            <li class="team__item">
               <img
                 class="team__image"
-                src="./image/team2.jpg"
+                srcset="./image/team-2-desk-min.jpg 1x, ./image/team-2-desk@2x-min.jpg 2x"
+                src="./image/team-2-desk-min.jpg"
                 alt="Фронт-энд разработчик студии"
                 width="270"
               />
@@ -202,10 +259,11 @@
                 </ul>
               </div>
             </li>
-            <li>
+            <li class="team__item">
               <img
                 class="team__image"
-                src="./image/team3.jpg"
+                srcset="./image/team-3-desk-min.jpg 1x, ./image/team-3-desk@2x-min.jpg 2x"
+                src="./image/team-3-desk-min.jpg"
                 alt="Маркетолог студии"
                 width="270"
               />
@@ -236,10 +294,11 @@
                 </ul>
               </div>
             </li>
-            <li>
+            <li class="team__item">
               <img
                 class="team__image"
-                src="./image/team4.jpg"
+              srcset="./image/team-4-desk-min.jpg 1x, ./image/team-4-desk@2x-min.jpg 2x"
+                src="./image/team-4-desk-min.jpg"
                 alt="UI Дизайнер студии"
                 width="270"
               />
@@ -423,6 +482,7 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
 
