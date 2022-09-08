@@ -37,6 +37,8 @@
     column-gap: 50px;
     align-items: center;
   }
+
+
 }
 
 .nav-box__item {
@@ -45,7 +47,18 @@
 .nav-box__contact-item {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; 
+ @media  screen and (max-width:1199.5px) {
+   &:first-child .nav-box__contact-link{
+    padding-top: 20px;
+    padding-bottom: 5px;
+  }
+  &:last-child .nav-box__contact-link{
+    padding-bottom: 20px;
+    padding-top: 5px;
+  }
+  
+ }
 }
 .nav-box__link {
   display: block;
@@ -79,8 +92,6 @@
   align-items: center;
   justify-content: center;
   column-gap: 10px;
-  padding-top: 32px;
-  padding-bottom: 32px;
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -98,10 +109,10 @@
   &:focus .nav-box__contact-icon {
     fill: var(--accent-color);
   }
-  @include tablet {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
+@include desktop {
+    padding-top: 32px;
+  padding-bottom: 32px;
+}
 }
 
 .nav-box__link--current {

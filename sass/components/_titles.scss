@@ -8,7 +8,7 @@
 
   color: var(--main-title-color);
   @include desktop {
-    font-style: 36px;
+    font-size: 36px;
   }
   @include desktop {
     margin-bottom: 50px;
@@ -23,6 +23,10 @@
 .sub-title--features {
   font-size: 14px;
   text-transform: uppercase;
+  @media screen and (max-width:767.5px){
+    text-align: center;
+    
+  }
 }
 .field-action__second-title {
   font-weight: 700;
