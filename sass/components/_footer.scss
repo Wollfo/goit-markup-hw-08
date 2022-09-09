@@ -35,7 +35,7 @@ align-items: center;
   text-decoration-color: none;
   text-align: center;
   @include desktop{
-    text-align: inherit;
+    text-align:inherit;
   }
 }
 
@@ -48,7 +48,7 @@ align-items: center;
   letter-spacing: 0.03em;
   text-align: center;
    @include desktop{
-    text-align: inherit;
+    text-align:inherit;
   }
 }
 
@@ -70,7 +70,7 @@ align-items: center;
   margin-bottom: 9px;
   text-align: center;
  @include desktop{
-   text-align: inherit;
+   text-align:inherit;
   }
   &:last-child {
     margin-bottom: 0;
