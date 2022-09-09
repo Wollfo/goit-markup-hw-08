@@ -1012,12 +1012,11 @@ img {
   text-decoration: none;
   -webkit-text-decoration-color: none;
           text-decoration-color: none;
-  text-align: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199.5px) {
   .logo--footer,
 .footer-contact__link {
-    text-align: inherit;
+    text-align: center;
   }
 }
 
@@ -1028,11 +1027,10 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  text-align: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199.5px) {
   .address__text {
-    text-align: inherit;
+    text-align: center;
   }
 }
 
@@ -1051,11 +1049,10 @@ img {
 .footer-contact__item {
   display: block;
   margin-bottom: 9px;
-  text-align: center;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1199.5px) {
   .footer-contact__item {
-    text-align: inherit;
+    text-align: center;
   }
 }
 .footer-contact__item:last-child {
