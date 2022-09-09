@@ -1014,6 +1014,12 @@ img {
           text-decoration-color: none;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .logo--footer,
+.footer-contact__link {
+    text-align: inherit;
+  }
+}
 
 .address__text {
   display: block;
@@ -1023,6 +1029,11 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .address__text {
+    text-align: inherit;
+  }
 }
 
 .footer-contact__link {
@@ -1041,6 +1052,11 @@ img {
   display: block;
   margin-bottom: 9px;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .footer-contact__item {
+    text-align: inherit;
+  }
 }
 .footer-contact__item:last-child {
   margin-bottom: 0;
