@@ -1500,7 +1500,7 @@ img {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  text-align: left;
+  text-align: center;
 }
 @media screen and (min-width: 768px) {
   .policy__text {
@@ -1521,6 +1521,7 @@ img {
 
 .policy__box {
   display: inline-block;
+  vertical-align: middle;
   width: 16px;
   height: 15px;
   border: 2px solid var(--main-title-color);
